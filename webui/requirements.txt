@@ -1,2 +1,5 @@
-reflex>=0.2.0
-openai
+reflex
+python-dotenv
+langchain
+langchain-openai
+manim

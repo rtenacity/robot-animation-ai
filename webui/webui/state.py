@@ -94,12 +94,6 @@ class State(rx.State):
     
     url_index:int = 0
     
-    code_list = ['''
-class AIScene(RobotScene):
-    def construct(self):
-        super().construct() 
-                 ''']
-    
     url_list:list = []
     
     url:str = ""
@@ -154,14 +148,11 @@ class AIScene(RobotScene):
 
     async def process_question(self, form_data: dict[str, str]):
         img.update_file()
-        # Get the question from the form
         question = form_data["question"]
 
-        # Check if the question is empty
         if question == "":
             return
 
-        
         model = self.openai_process_question
 
         async for value in model(question):
@@ -192,26 +183,13 @@ class AIScene(RobotScene):
         
         parsed = CodeParser().parse(result.content)
         
-        
         reason = parsed[0]
         code = parsed[1]
         
-        code = code.replace("python", "").strip()
-        
-        pattern = r"^.*class AIScene\(RobotScene\):.*?super\(\)\.construct\(\) \n"
+        exec_code = code.replace("python", "").strip()
 
-        new_code = re.sub(pattern, "", code, flags=re.DOTALL)
-
-        print(new_code)
-        
-        self.code_list.append(new_code)
-        
-        exec_code = "\n".join(self.code_list)
-        
-        print(exec_code)
-
-        code = "config.output_dir = 'assets'\n" +  code + "\nAIScene2 = AIScene() \nAIScene2.render()"
-        exec(code)
+        exec_code = "config.output_dir = 'assets'\n" +  exec_code + "\nAIScene2 = AIScene() \nAIScene2.render()"
+        exec(exec_code)
         
         source_path = "/Users/rohanarni/Projects/robot-animation-ai/webui/media/videos/1920p60/AIScene.mp4"
 
