@@ -189,15 +189,17 @@ class State(rx.State):
         reason = parsed[0]
         code = parsed[1]
         
+        print(code)
+        
         exec_code = code.replace("python", "")
 
         exec_code = "config.output_dir = 'assets'\n" +  exec_code + "\nAIScene2 = AIScene() \nAIScene2.render()"
         exec(exec_code)
     
         
-        source_path = "/Users/rohanarni/Projects/robot-systems-ai/webui/media/videos/1920p60/AIScene.mp4"
+        source_path = "/Users/rohanarni/Projects/robot-animation-ai/webui/media/videos/1920p60/AIScene.mp4"
 
-        destination_dir = "/Users/rohanarni/Projects/robot-systems-ai/webui/assets/"
+        destination_dir = "/Users/rohanarni/Projects/robot-animation-ai/webui/assets/"
 
         destination_path = os.path.join(destination_dir, img.filename)
 
