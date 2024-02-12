@@ -120,7 +120,6 @@ class AIScene(RobotScene):
 
 
 First, reason with the prompt by generating a list of steps. Be sure to restate the prompt. Then, generate code. Make sure to use the format: ``` to begin the class and ``` to end it. Remember, if you need to move objects on the grid, you need to create them first. 
-
 '''
     def return_template(self):
         return self.template

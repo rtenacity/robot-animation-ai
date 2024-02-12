@@ -10,6 +10,7 @@ import shutil
 import time
 from webui.grid_scene import *
 from webui.template import Template
+import re
 
 temp = Template()
 
@@ -29,7 +30,7 @@ def format_history(chats):
         formatted_messages.extend((question, answer))
     return formatted_messages
 
-human_template = "Prompt: The blue robot cannot go to the right side of the barrier. The red robot cannot go to the left side of the barrier. An object has been loaded at load zone D, and it needs to move to load zone A. Prompt: {text}"
+human_template = "Prompt: {text}"
 
 template = temp.return_template()
 model = ChatOpenAI(model = 'gpt-3.5-turbo', openai_api_key = api_key)
@@ -92,6 +93,12 @@ class State(rx.State):
     modal_open:bool  = False
     
     url_index:int = 0
+    
+    code_list = ['''
+class AIScene(RobotScene):
+    def construct(self):
+        super().construct() 
+                 ''']
     
     url_list:list = []
     
@@ -189,13 +196,22 @@ class State(rx.State):
         reason = parsed[0]
         code = parsed[1]
         
-        print(code)
+        code = code.replace("python", "").strip()
         
-        exec_code = code.replace("python", "")
+        pattern = r"^.*class AIScene\(RobotScene\):.*?super\(\)\.construct\(\) \n"
 
-        exec_code = "config.output_dir = 'assets'\n" +  exec_code + "\nAIScene2 = AIScene() \nAIScene2.render()"
-        exec(exec_code)
-    
+        new_code = re.sub(pattern, "", code, flags=re.DOTALL)
+
+        print(new_code)
+        
+        self.code_list.append(new_code)
+        
+        exec_code = "\n".join(self.code_list)
+        
+        print(exec_code)
+
+        code = "config.output_dir = 'assets'\n" +  code + "\nAIScene2 = AIScene() \nAIScene2.render()"
+        exec(code)
         
         source_path = "/Users/rohanarni/Projects/robot-animation-ai/webui/media/videos/1920p60/AIScene.mp4"
 
