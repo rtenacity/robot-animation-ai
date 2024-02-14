@@ -168,7 +168,6 @@ class State(rx.State):
         qa = QA(question=question, answer="")
         self.chats[self.current_chat].append(qa)
         self.processing = True
-        yield
         
         history_messages = format_history(self.chats[self.current_chat])
         
@@ -192,7 +191,6 @@ class State(rx.State):
         exec(exec_code)
         
         source_path = "/Users/rohanarni/Projects/robot-animation-ai/webui/media/videos/1920p60/AIScene.mp4"
-
         destination_dir = "/Users/rohanarni/Projects/robot-animation-ai/webui/assets/"
 
         destination_path = os.path.join(destination_dir, img.filename)
@@ -210,7 +208,6 @@ class State(rx.State):
 ```
 """     
 
-        
         self.chats[self.current_chat][-1].answer += answer_text
         self.chats = self.chats
         
