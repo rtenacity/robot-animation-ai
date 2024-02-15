@@ -11,6 +11,8 @@ import time
 from webui.grid_scene import *
 from webui.template import Template
 import re
+from langchain_community.chat_models import BedrockChat
+import boto3
 
 temp = Template()
 
@@ -32,8 +34,12 @@ def format_history(chats):
 
 human_template = "Prompt: {text}"
 
+client = boto3.client("bedrock-runtime")
+
 template = temp.return_template()
-model = ChatOpenAI(model = 'gpt-3.5-turbo', openai_api_key = api_key)
+#model = ChatOpenAI(model = 'gpt-3.5-turbo', openai_api_key = api_key)
+model = BedrockChat(model_id="meta.llama2-70b-chat-v1")
+
 
 class QA(rx.Base):
     """A question and answer pair."""
@@ -94,6 +100,12 @@ class State(rx.State):
     
     url_index:int = 0
     
+    code_list = ['''
+class AIScene(RobotScene):
+    def construct(self):
+        super().construct() 
+                 ''']
+    
     url_list:list = []
     
     url:str = ""
@@ -148,11 +160,14 @@ class State(rx.State):
 
     async def process_question(self, form_data: dict[str, str]):
         img.update_file()
+        # Get the question from the form
         question = form_data["question"]
 
+        # Check if the question is empty
         if question == "":
             return
 
+        
         model = self.openai_process_question
 
         async for value in model(question):
@@ -168,6 +183,7 @@ class State(rx.State):
         qa = QA(question=question, answer="")
         self.chats[self.current_chat].append(qa)
         self.processing = True
+        yield
         
         history_messages = format_history(self.chats[self.current_chat])
         
@@ -182,15 +198,29 @@ class State(rx.State):
         
         parsed = CodeParser().parse(result.content)
         
+        
         reason = parsed[0]
         code = parsed[1]
         
-        exec_code = code.replace("python", "").strip()
+        code = code.replace("python", "").strip()
+        
+        pattern = r"^.*class AIScene\(RobotScene\):.*?super\(\)\.construct\(\) \n"
 
-        exec_code = "config.output_dir = 'assets'\n" +  exec_code + "\nAIScene2 = AIScene() \nAIScene2.render()"
-        exec(exec_code)
+        new_code = re.sub(pattern, "", code, flags=re.DOTALL)
+
+        print(new_code)
+        
+        self.code_list.append(new_code)
+        
+        exec_code = "\n".join(self.code_list)
+        
+        print(exec_code)
+
+        code = "config.output_dir = 'assets'\n" +  code + "\nAIScene2 = AIScene() \nAIScene2.render()"
+        exec(code)
         
         source_path = "/Users/rohanarni/Projects/robot-animation-ai/webui/media/videos/1920p60/AIScene.mp4"
+
         destination_dir = "/Users/rohanarni/Projects/robot-animation-ai/webui/assets/"
 
         destination_path = os.path.join(destination_dir, img.filename)
@@ -208,6 +238,7 @@ class State(rx.State):
 ```
 """     
 
+        
         self.chats[self.current_chat][-1].answer += answer_text
         self.chats = self.chats
         
@@ -215,6 +246,5 @@ class State(rx.State):
         self.processing = False
         
         self.update_url(img.fileaddr)
-
 
 
