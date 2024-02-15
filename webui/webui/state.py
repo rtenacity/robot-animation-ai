@@ -9,12 +9,11 @@ from webui.components import loading_icon
 import shutil
 import time
 from webui.grid_scene import *
-from webui.template import Template
+from webui.template import template
 import re
 from langchain_community.chat_models import BedrockChat
 import boto3
 
-temp = Template()
 
 load_dotenv()
 
@@ -36,7 +35,6 @@ human_template = "Prompt: {text}"
 
 client = boto3.client("bedrock-runtime")
 
-template = temp.return_template()
 #model = ChatOpenAI(model = 'gpt-3.5-turbo', openai_api_key = api_key)
 model = BedrockChat(model_id="meta.llama2-70b-chat-v1")
 

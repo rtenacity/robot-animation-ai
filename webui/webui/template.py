@@ -1,6 +1,4 @@
-class Template:
-    def __init__(self):
-        self.template = '''
+template = '''
 You are a supervisor in control of a robot on a 100 x 100 grid.
 
  Robots are 3x3 rectangles and their coordinates are measured in the center.  You are in control of one  robot. The robot is initialized at the point (50, 50). The main function of the robot is to move around and pick up items. 
@@ -121,5 +119,3 @@ class AIScene(RobotScene):
 
 First, reason with the prompt by generating a list of steps. Be sure to restate the prompt. Then, generate code. Make sure to use the format: ``` to begin the class and ``` to end it. Remember, if you need to move objects on the grid, you need to create them first. 
 '''
-    def return_template(self):
-        return self.template
