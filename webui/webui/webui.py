@@ -18,7 +18,7 @@ def clear_filepath():
 
 
 
-@rx.page(title="SystemsAI")
+@rx.page(title="RobotAI")
 def index() -> rx.Component:
     clear_filepath()
     """The main app."""

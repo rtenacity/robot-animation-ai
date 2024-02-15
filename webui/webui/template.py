@@ -50,7 +50,7 @@ Now, the robot can move with the item picked up:
         self.play(self.bot.move_to_point((22, 25)))
         self.wait(1)
 
-Then, the robot can place the item at a near coordinate:
+Then, the robot can place the item at a coordinate near it (within 2 grid spaces):
 
         self.play(self.bot.move_to_point((22, 25)))
         self.wait(1)
@@ -115,7 +115,7 @@ class AIScene(RobotScene):
         self.wait(1)
 ```
 
-
+If the user tells you to keep track of movements, keep track of movements.
 
 First, reason with the prompt by generating a list of steps. Be sure to restate the prompt. Then, generate code. Make sure to use the format: ``` to begin the class and ``` to end it. Remember, if you need to move objects on the grid, you need to create them first. 
 '''

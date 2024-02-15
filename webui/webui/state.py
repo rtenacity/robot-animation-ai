@@ -98,12 +98,6 @@ class State(rx.State):
     
     url_index:int = 0
     
-    code_list = ['''
-class AIScene(RobotScene):
-    def construct(self):
-        super().construct() 
-                 ''']
-    
     url_list:list = []
     
     url:str = ""
@@ -200,22 +194,13 @@ class AIScene(RobotScene):
         reason = parsed[0]
         code = parsed[1]
         
-        code = code.replace("python", "").strip()
-        
-        pattern = r"^.*class AIScene\(RobotScene\):.*?super\(\)\.construct\(\) \n"
+        exec_code = code.replace("python", "").strip()
+    
 
-        new_code = re.sub(pattern, "", code, flags=re.DOTALL)
-
-        print(new_code)
-        
-        self.code_list.append(new_code)
-        
-        exec_code = "\n".join(self.code_list)
+        exec_code = "config.output_dir = 'assets'\n" +  exec_code + "\nAIScene2 = AIScene() \nAIScene2.render()"
+        exec(exec_code)
         
         print(exec_code)
-
-        code = "config.output_dir = 'assets'\n" +  code + "\nAIScene2 = AIScene() \nAIScene2.render()"
-        exec(code)
         
         source_path = "/Users/rohanarni/Projects/robot-animation-ai/webui/media/videos/1920p60/AIScene.mp4"
 
