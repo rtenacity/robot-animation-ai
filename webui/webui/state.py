@@ -22,7 +22,7 @@ api_key = os.getenv('OPENAI_API_KEY')
 class CodeParser(BaseOutputParser):
     def parse(self, text: str):
         return text.strip().split("```")
-    
+
 def format_history(chats):
     formatted_messages = []
     for chat in chats:
@@ -44,20 +44,20 @@ class QA(rx.Base):
 
     question: str
     answer: str
-    
+
 class ImageURL():
-    
+
     def __init__(self):
         self.file_version = 0
         self.filename = "AIScene_0.mp4"
         self.fileaddr = "/" + self.filename
-    
+
     def update_file(self):
         self.file_version += 1
         self.filename = f"AIScene_{self.file_version}.mp4"
         self.fileaddr = "/" + self.filename
-    
-        
+
+
 img = ImageURL()
 
 DEFAULT_CHATS = {
@@ -93,13 +93,13 @@ class State(rx.State):
 
     # Whether the drawer is open.
     drawer_open: bool = False
-    
+
     modal_open:bool  = False
-    
+
     url_index:int = 0
-    
+
     url_list:list = []
-    
+
     url:str = ""
 
     def create_chat(self):
@@ -110,7 +110,7 @@ class State(rx.State):
 
         # Toggle the modal.
         self.modal_open = False
-    
+
     def update_url(self, new_url:str):
         self.url_list.append(new_url)
         self.url_index+=1
@@ -159,7 +159,7 @@ class State(rx.State):
         if question == "":
             return
 
-        
+
         model = self.openai_process_question
 
         async for value in model(question):
@@ -176,32 +176,32 @@ class State(rx.State):
         self.chats[self.current_chat].append(qa)
         self.processing = True
         yield
-        
+
         history_messages = format_history(self.chats[self.current_chat])
-        
+
         final_template = history_messages
         final_template.insert(0, ('system', template))
         final_template.append(('human', human_template))
 
         prompt = ChatPromptTemplate.from_messages(final_template)
         messages = prompt.format_messages(text=question)
-        
+
         result = model.invoke(messages)
-        
+
         parsed = CodeParser().parse(result.content)
-        
-        
+
+
         reason = parsed[0]
         code = parsed[1]
-        
+
         exec_code = code.replace("python", "").strip()
-    
+
 
         exec_code = "config.output_dir = 'assets'\n" +  exec_code + "\nAIScene2 = AIScene() \nAIScene2.render()"
         exec(exec_code)
-        
+
         print(exec_code)
-        
+
         source_path = "/Users/rohanarni/Projects/robot-animation-ai/webui/media/videos/1920p60/AIScene.mp4"
 
         destination_dir = "/Users/rohanarni/Projects/robot-animation-ai/webui/assets/"
@@ -209,25 +209,22 @@ class State(rx.State):
         destination_path = os.path.join(destination_dir, img.filename)
 
         shutil.move(source_path, destination_path)
-            
+
         answer_text = add_br_tags(reason)
-        
+
         self.chats[self.current_chat][-1].answer += answer_text
         self.chats = self.chats
-        
+
         answer_text = rf"""
 ```python3
 {code}
 ```
-"""     
+"""
 
-        
         self.chats[self.current_chat][-1].answer += answer_text
         self.chats = self.chats
-        
-        time.sleep(5)
+
+        time.sleep(0.1)
         self.processing = False
-        
+
         self.update_url(img.fileaddr)
-
-
