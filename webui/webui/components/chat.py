@@ -29,7 +29,7 @@ def message(qa: QA) -> rx.Component:
                 qa.answer,
                 ),
                 rx.cond(
-                    ~State.processing,
+                    ~State.video_processing,
                         rx.video(
                             url=State.url,
                             width = "450px",

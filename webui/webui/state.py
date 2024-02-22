@@ -87,6 +87,8 @@ class State(rx.State):
 
     # Whether we are processing the question.
     processing: bool = False
+    
+    video_processing: bool = False
 
     # The name of the new chat.
     new_chat_name: str = ""
@@ -94,7 +96,7 @@ class State(rx.State):
     # Whether the drawer is open.
     drawer_open: bool = False
 
-    modal_open:bool  = False
+    modal_open:bool = False
 
     url_index:int = 0
 
@@ -174,6 +176,7 @@ class State(rx.State):
 
         qa = QA(question=question, answer="")
         self.chats[self.current_chat].append(qa)
+        self.video_processing = True
         self.processing = True
         yield
 
@@ -195,9 +198,31 @@ class State(rx.State):
         code = parsed[1]
 
         exec_code = code.replace("python", "").strip()
+        
+        answer_text = add_br_tags(reason)
 
+        self.chats[self.current_chat][-1].answer += answer_text
+        self.chats = self.chats
 
+        answer_text = rf"""
+```python3
+{code}
+```
+"""
+
+        self.chats[self.current_chat][-1].answer += answer_text
+        self.chats = self.chats
+        
         exec_code = "config.output_dir = 'assets'\n" +  exec_code + "\nAIScene2 = AIScene() \nAIScene2.render()"
+
+        
+        await self.generate_video(exec_code)
+        
+        self.processing = False
+
+
+    async def generate_video(self, exec_code):
+        
         exec(exec_code)
 
         print(exec_code)
@@ -212,22 +237,12 @@ class State(rx.State):
         destination_path = os.path.join(destination_dir, img.filename)
 
         shutil.move(source_path, destination_path)
-
-        answer_text = add_br_tags(reason)
-
-        self.chats[self.current_chat][-1].answer += answer_text
-        self.chats = self.chats
-
-        answer_text = rf"""
-```python3
-{code}
-```
-"""
-
-        self.chats[self.current_chat][-1].answer += answer_text
-        self.chats = self.chats
-
+        
         time.sleep(2)
-        self.processing = False
+
 
         self.update_url(img.fileaddr)
+        
+        
+        self.video_processing = False
+        
