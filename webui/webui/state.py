@@ -205,6 +205,9 @@ class State(rx.State):
         source_path = "/Users/rohanarni/Projects/robot-animation-ai/webui/media/videos/1920p60/AIScene.mp4"
 
         destination_dir = "/Users/rohanarni/Projects/robot-animation-ai/webui/assets/"
+        
+        # source_path = "/home/ubuntu/robot-animation-ai/webui/media/videos/1920p60/AIScene.mp4"
+        # destination_dir = "/home/ubuntu/robot-animation-ai/webui/assets/"
 
         destination_path = os.path.join(destination_dir, img.filename)
 
@@ -224,7 +227,7 @@ class State(rx.State):
         self.chats[self.current_chat][-1].answer += answer_text
         self.chats = self.chats
 
-        time.sleep(0.1)
+        time.sleep(2)
         self.processing = False
 
         self.update_url(img.fileaddr)

@@ -7,10 +7,14 @@ from webui import styles
 from webui.components import chat, modal, navbar, sidebar
 from webui.state import State
 def clear_filepath():
-    destination_dir = "/Users/rohanarni/Projects/robot-systems-ai/webui/assets/"
+    #destination_dir = "/home/ubuntu/robot-animation-ai/webui/assets/"
+    destination_dir = "/Users/rohanarni/Projects/robot-animation-ai/webui/assets/"
+    print(destination_dir)
 
     files_in_directory = os.listdir(destination_dir)
+    
     mp4_files = [file for file in files_in_directory if file.endswith(".mp4")]
+    print(mp4_files)
 
     for mp4_file in mp4_files:
         file_path = os.path.join(destination_dir, mp4_file)
