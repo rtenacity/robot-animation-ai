@@ -4,4 +4,6 @@
 .vscode
 .web
 __pycache__/
+assets/
+media/
 reflex.db

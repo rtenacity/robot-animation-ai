@@ -35,7 +35,6 @@ human_template = "Prompt: {text}"
 
 client = boto3.client("bedrock-runtime")
 
-#model = ChatOpenAI(model = 'gpt-3.5-turbo', openai_api_key = api_key)
 model = BedrockChat(model_id="meta.llama2-70b-chat-v1")
 
 
@@ -161,7 +160,6 @@ class State(rx.State):
         if question == "":
             return
 
-
         model = self.openai_process_question
 
         async for value in model(question):
@@ -173,6 +171,8 @@ class State(rx.State):
         Args:
             form_data: A dict with the current question.
         """
+        
+        worked = True
 
         qa = QA(question=question, answer="")
         self.chats[self.current_chat].append(qa)
@@ -193,31 +193,39 @@ class State(rx.State):
 
         parsed = CodeParser().parse(result.content)
 
+        try:
+            reason = parsed[0]
+            code = parsed[1]
 
-        reason = parsed[0]
-        code = parsed[1]
-
-        exec_code = code.replace("python", "").strip()
+            exec_code = code.replace("python", "").strip()
+            
+            
+            exec_code = "config.output_dir = 'assets'\n" +  exec_code + "\nAIScene2 = AIScene() \nAIScene2.render()"
+            
+            print(exec_code)
+            
+            await self.generate_video(exec_code)
+            
+        except:
+            answer_text = "Sorry, an error occured"
+            self.chats[self.current_chat][-1].answer += answer_text
+            self.chats = self.chats
+            worked = False
         
-        answer_text = add_br_tags(reason)
+        if worked:
+            answer_text = add_br_tags(reason)
 
-        self.chats[self.current_chat][-1].answer += answer_text
-        self.chats = self.chats
+            self.chats[self.current_chat][-1].answer += answer_text
+            self.chats = self.chats
 
-        answer_text = rf"""
+            answer_text = rf"""
 ```python3
 {code}
 ```
 """
-
-        self.chats[self.current_chat][-1].answer += answer_text
-        self.chats = self.chats
-        
-        exec_code = "config.output_dir = 'assets'\n" +  exec_code + "\nAIScene2 = AIScene() \nAIScene2.render()"
-
-        
-        await self.generate_video(exec_code)
-        
+            self.chats[self.current_chat][-1].answer += answer_text
+            self.chats = self.chats
+                
         self.processing = False
 
 
@@ -239,10 +247,8 @@ class State(rx.State):
         shutil.move(source_path, destination_path)
         
         time.sleep(2)
-
-
-        self.update_url(img.fileaddr)
         
+        self.update_url(img.fileaddr)
         
         self.video_processing = False
         

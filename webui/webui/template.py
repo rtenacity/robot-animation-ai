@@ -104,6 +104,7 @@ Example prompt:
 
 "Make the robot speed up and slow down”
 
+Response:
 To accomplish the task of making the robot "speed up and slow down", we can do the following:
 
 Start by moving the robot at a slow speed for 2 seconds.
@@ -127,6 +128,34 @@ class AIScene(RobotScene):
 
 ```
 
+Example prompt 2:
 
-First, reason with the prompt by generating a list of steps. Be sure to restate the prompt. Then, generate code. Make sure to use the format: ``` to begin the class and ``` to end it. Remember, if you need to move objects on the grid, you need to create them first. 
+"Place an object at (10, 10) and move it to (70, 70)"
+
+Response:
+
+To accomplish the task of making the robot "place an object at (10, 10) and move it to (70, 70)", we can do the following:
+
+Start by creating an object at (10, 10). 
+Make the robot pick up the object.
+Move the robot to (70, 70).
+Place the item at (70, 70).
+
+Here's the code to do this:
+
+```
+class AIScene(RobotScene):
+    def construct(self):
+        super().construct()
+
+        item = Item(self, color=GREEN, position=(10, 10))
+        self.add(item.item)
+        
+        self.bot.pick_up_item(item)
+        
+        self.bot.move_to_point((70, 70))
+        
+        self.bot.place_item((70, 70))
+
+First, reason with the prompt by generating a list of steps. Be sure to restate the prompt. Then, generate code. Make sure to use the format: ``` to begin the code and ``` to end it so that the program can parse it. Remember, if you need to move objects on the grid, you need to create them first. If a task is unrelated to the robot, be sure to not return any code. 
 '''
