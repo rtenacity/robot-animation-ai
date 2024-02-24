@@ -196,6 +196,7 @@ class State(rx.State):
         try:
             reason = parsed[0]
             code = parsed[1]
+            print(code)
 
             exec_code = code.replace("python", "").strip()
             
