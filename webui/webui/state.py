@@ -8,7 +8,11 @@ import time
 from webui.grid_scene import *
 from webui.template import template, path
 from langchain_community.chat_models import BedrockChat
+from langchain_openai import ChatOpenAI
 import boto3
+import asyncio
+from concurrent.futures import ThreadPoolExecutor
+import traceback
 
 
 load_dotenv()
@@ -34,7 +38,9 @@ human_template = "Prompt: {text}"
 
 client = boto3.client("bedrock-runtime")
 
-model = BedrockChat(model_id="meta.llama2-70b-chat-v1")
+model = ChatOpenAI(model = 'gpt-3.5-turbo', openai_api_key = api_key)
+
+#model = BedrockChat(model_id="meta.llama2-70b-chat-v1")
 
 
 class QA(rx.Base):
@@ -165,12 +171,11 @@ class State(rx.State):
             yield value
 
     async def openai_process_question(self, question: str):
-        """Get the response from the API.
+        """Get the response from the API asynchronously.
 
         Args:
-            form_data: A dict with the current question.
+            question: A string containing the question.
         """
-
         worked = True
 
         qa = QA(question=question, answer="")
@@ -178,6 +183,7 @@ class State(rx.State):
         self.video_processing = True
         self.processing = True
         yield
+        await asyncio.sleep(0)  # Yield control to the event loop
 
         history_messages = format_history(self.chats[self.current_chat])
 
@@ -188,8 +194,10 @@ class State(rx.State):
         prompt = ChatPromptTemplate.from_messages(final_template)
         messages = prompt.format_messages(text=question)
 
-        result = model.invoke(messages)
+        loop = asyncio.get_running_loop()
 
+        # Wrap the synchronous model.invoke call to run it in a thread pool
+        result = await loop.run_in_executor(None, lambda: model.invoke(messages))
         parsed = CodeParser().parse(result.content)
 
         try:
@@ -207,8 +215,11 @@ class State(rx.State):
 
             await self.generate_video(exec_code)
 
-        except:
-            answer_text = "Sorry, an error occured"
+        except Exception as e:
+            print(parsed)
+            error_text = traceback.format_exc()
+            print(error_text)  # This will print the error to your console or log
+            answer_text = "Sorry, an error occurred: " + str(e)
             self.chats[self.current_chat][-1].answer += answer_text
             self.chats = self.chats
             worked = False
@@ -230,13 +241,22 @@ class State(rx.State):
         self.processing = False
 
     async def generate_video(self, exec_code):
-        exec(exec_code)
-        
+        loop = asyncio.get_running_loop()
+
+        # Define a synchronous wrapper function that will execute the code
+        def execute_code():
+            # This is where your synchronous code execution happens
+            exec(exec_code, globals())
+
+        # Run the synchronous function in a separate thread
+        await loop.run_in_executor(ThreadPoolExecutor(), execute_code)
+
+        # Proceed with moving the file and updating the URL as before
         source_path = f"{path}/media/videos/1920p60/AIScene.mp4"
         destination_dir = f"{path}/assets/"
         destination_path = os.path.join(destination_dir, img.filename)
         shutil.move(source_path, destination_path)
         
-        time.sleep(2)
+        time.sleep(2)  # Consider replacing with an async sleep if necessary
         self.update_url(img.fileaddr)
         self.video_processing = False

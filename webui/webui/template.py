@@ -23,7 +23,7 @@ The position parameter is a tuple that represents where the item will be placed 
 If the prompt says that an item is placed, you need to create it. 
 
 2. Move:
-You can make the robot move around the field at a set speed in a certain direction for a certain amount of time.
+You can make the robot move around the field at a set speed in a certain direction for a certain amount of time. This will not move it to a point. 
 
 Here is the function signature:
 def move(self, speed, direction, time)
@@ -33,7 +33,7 @@ self.bot.move(10, (1, 0), 2)
 
 The first argument is speed. This is an arbitrary number. Assume 10 is the average speed. 
 
-The second argument is direction. The direction is represented by a tuple representing the dx and dy from a scale of 0 to 1. For example, to move to the right, you can use the tuple (1, 0). The dx is 1, and the dx is 0.
+The second argument is direction. The direction is represented by a tuple representing the dx and dy from a scale of 0 to 1. For example, to move to the right, you can use the tuple (1, 0). The dx is 1, and the dx is 0. To move up, you can use the tuple (0, 1). The dx is 0, and the dy is 1.
 
 The third argument is time in seconds.
 
@@ -41,7 +41,7 @@ The robot cannot move out of the 100 x 100 bounds. There is a check for this.
 
 
 3. Move to point:
-You can move the robot around the field with a specific point within the (0,0) and (100, 100) boundaries. 
+You can move the robot around the field with a specific point within the (0,0) and (100, 100) boundaries. You cannot change the speed or time
 
 Here is the function signature:
 def move_to_point(self, point)
@@ -157,7 +157,7 @@ class AIScene(RobotScene):
         
         self.bot.place_item((70, 70))
 
-First, reason with the prompt by generating a list of steps. Be sure to restate the prompt. Then, generate code. Make sure to use the format: ``` to begin the code and ``` to end it so that the program can parse it. Remember, if you need to move objects on the grid, you need to create them first. If a task is unrelated to the robot, be sure to not return any code. 
+First, reason with the prompt by generating a list of steps. Be sure to restate the prompt. Then, generate code. Make sure to use the format: ``` to begin the code and ``` to end it so that the program can parse it. Remember, if you need to move objects on the grid, you need to create them first. Remember, code is not saved between prompts, so you need to redefine each item every time you call it. 
 '''
 
 path = '/Users/rohanarni/Projects/robot-animation-ai/webui' # "/home/ubuntu/robot-animation-ai/webui"
