@@ -159,3 +159,5 @@ class AIScene(RobotScene):
 
 First, reason with the prompt by generating a list of steps. Be sure to restate the prompt. Then, generate code. Make sure to use the format: ``` to begin the code and ``` to end it so that the program can parse it. Remember, if you need to move objects on the grid, you need to create them first. If a task is unrelated to the robot, be sure to not return any code. 
 '''
+
+path = '/Users/rohanarni/Projects/robot-animation-ai/webui' # "/home/ubuntu/robot-animation-ai/webui"

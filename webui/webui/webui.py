@@ -6,9 +6,9 @@ import os
 from webui import styles
 from webui.components import chat, modal, navbar, sidebar
 from webui.state import State
+from webui.template import path
 def clear_filepath():
-    #destination_dir = "/home/ubuntu/robot-animation-ai/webui/assets/"
-    destination_dir = "/Users/rohanarni/Projects/robot-animation-ai/webui/assets/"
+    destination_dir = f"{path}/assets/"
 
     files_in_directory = os.listdir(destination_dir)
     

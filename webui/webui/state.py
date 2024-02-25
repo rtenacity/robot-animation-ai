@@ -3,25 +3,23 @@ import reflex as rx
 from dotenv import load_dotenv
 from langchain.prompts.chat import ChatPromptTemplate
 from langchain.schema import BaseOutputParser
-from langchain_openai import ChatOpenAI
-from webui import styles
-from webui.components import loading_icon
 import shutil
 import time
 from webui.grid_scene import *
-from webui.template import template
-import re
+from webui.template import template, path
 from langchain_community.chat_models import BedrockChat
 import boto3
 
 
 load_dotenv()
 
-api_key = os.getenv('OPENAI_API_KEY')
+api_key = os.getenv("OPENAI_API_KEY")
+
 
 class CodeParser(BaseOutputParser):
     def parse(self, text: str):
         return text.strip().split("```")
+
 
 def format_history(chats):
     formatted_messages = []
@@ -30,6 +28,7 @@ def format_history(chats):
         answer = "Assistant: " + str(chat.answer)
         formatted_messages.extend((question, answer))
     return formatted_messages
+
 
 human_template = "Prompt: {text}"
 
@@ -44,8 +43,8 @@ class QA(rx.Base):
     question: str
     answer: str
 
-class ImageURL():
 
+class ImageURL:
     def __init__(self):
         self.file_version = 0
         self.filename = "AIScene_0.mp4"
@@ -65,11 +64,11 @@ DEFAULT_CHATS = {
 
 
 def add_br_tags(input_string):
-    lines = input_string.split('\n')
+    lines = input_string.split("\n")
 
     lines_with_br = [line + "<br>" for line in lines]
 
-    return '\n'.join(lines_with_br)
+    return "\n".join(lines_with_br)
 
 
 class State(rx.State):
@@ -86,7 +85,7 @@ class State(rx.State):
 
     # Whether we are processing the question.
     processing: bool = False
-    
+
     video_processing: bool = False
 
     # The name of the new chat.
@@ -95,13 +94,13 @@ class State(rx.State):
     # Whether the drawer is open.
     drawer_open: bool = False
 
-    modal_open:bool = False
+    modal_open: bool = False
 
-    url_index:int = 0
+    url_index: int = 0
 
-    url_list:list = []
+    url_list: list = []
 
-    url:str = ""
+    url: str = ""
 
     def create_chat(self):
         """Create a new chat."""
@@ -112,9 +111,9 @@ class State(rx.State):
         # Toggle the modal.
         self.modal_open = False
 
-    def update_url(self, new_url:str):
+    def update_url(self, new_url: str):
         self.url_list.append(new_url)
-        self.url_index+=1
+        self.url_index += 1
         self.url = new_url
 
     def toggle_modal(self):
@@ -171,7 +170,7 @@ class State(rx.State):
         Args:
             form_data: A dict with the current question.
         """
-        
+
         worked = True
 
         qa = QA(question=question, answer="")
@@ -183,8 +182,8 @@ class State(rx.State):
         history_messages = format_history(self.chats[self.current_chat])
 
         final_template = history_messages
-        final_template.insert(0, ('system', template))
-        final_template.append(('human', human_template))
+        final_template.insert(0, ("system", template))
+        final_template.append(("human", human_template))
 
         prompt = ChatPromptTemplate.from_messages(final_template)
         messages = prompt.format_messages(text=question)
@@ -199,20 +198,21 @@ class State(rx.State):
             print(code)
 
             exec_code = code.replace("python", "").strip()
-            
-            
-            exec_code = "config.output_dir = 'assets'\n" +  exec_code + "\nAIScene2 = AIScene() \nAIScene2.render()"
-            
-            print(exec_code)
-            
+
+            exec_code = (
+                "config.output_dir = 'assets'\n"
+                + exec_code
+                + "\nAIScene2 = AIScene() \nAIScene2.render()"
+            )
+
             await self.generate_video(exec_code)
-            
+
         except:
             answer_text = "Sorry, an error occured"
             self.chats[self.current_chat][-1].answer += answer_text
             self.chats = self.chats
             worked = False
-        
+
         if worked:
             answer_text = add_br_tags(reason)
 
@@ -226,30 +226,17 @@ class State(rx.State):
 """
             self.chats[self.current_chat][-1].answer += answer_text
             self.chats = self.chats
-                
+
         self.processing = False
 
-
     async def generate_video(self, exec_code):
-        
         exec(exec_code)
-
-        print(exec_code)
-
-        source_path = "/Users/rohanarni/Projects/robot-animation-ai/webui/media/videos/1920p60/AIScene.mp4"
-
-        destination_dir = "/Users/rohanarni/Projects/robot-animation-ai/webui/assets/"
         
-        # source_path = "/home/ubuntu/robot-animation-ai/webui/media/videos/1920p60/AIScene.mp4"
-        # destination_dir = "/home/ubuntu/robot-animation-ai/webui/assets/"
-
+        source_path = f"{path}/media/videos/1920p60/AIScene.mp4"
+        destination_dir = f"{path}/assets/"
         destination_path = os.path.join(destination_dir, img.filename)
-
         shutil.move(source_path, destination_path)
         
         time.sleep(2)
-        
         self.update_url(img.fileaddr)
-        
         self.video_processing = False
-        
