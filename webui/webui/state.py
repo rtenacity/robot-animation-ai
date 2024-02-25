@@ -175,6 +175,8 @@ class State(rx.State):
         Args:
             question: A string containing the question.
         """
+        
+        start_time = time.time()
         worked = True
 
         qa = QA(question=question, answer="")
@@ -236,6 +238,10 @@ class State(rx.State):
 """
             self.chats[self.current_chat][-1].answer += answer_text
             self.chats = self.chats
+        
+        end_time = time.time()  # Capture end time after processing is complete
+        execution_time = end_time - start_time
+        print(f"Execution time: {execution_time} seconds")
 
         self.processing = False
 
