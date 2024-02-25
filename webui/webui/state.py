@@ -14,7 +14,6 @@ import asyncio
 from concurrent.futures import ThreadPoolExecutor
 import traceback
 
-
 load_dotenv()
 
 api_key = os.getenv("OPENAI_API_KEY")

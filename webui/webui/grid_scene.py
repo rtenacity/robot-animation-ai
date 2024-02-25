@@ -1,10 +1,12 @@
 from manim import Scene, Square, Circle, BLUE, RED, GREEN, MoveAlongPath, Line, NumberPlane, BLACK, config, WHITE, AnimationGroup, ApplyMethod, UP, DOWN, LEFT, Rectangle, Text
 
-config.pixel_height = 1920
-config.pixel_width = 1920
+config.pixel_height = 480
+config.pixel_width = 480
 config.frame_height = 16.0
 config.frame_width = 16.0
 config.background_color = WHITE
+config.frame_rate = 15
+config.disable_caching = True
 
 class Bot:
     def __init__(self, scene, color, initial_position):
@@ -151,5 +153,5 @@ class AIScene(RobotScene):
         self.bot.place_item((80, 50))
 
 
-# AIScene2 = AIScene()
-# AIScene2.render()
+AIScene2 = AIScene()
+AIScene2.render()
