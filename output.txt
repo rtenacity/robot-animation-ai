@@ -1555,3 +1555,833 @@ deleted folder
 Execution time: 4.426091909408569 seconds
 Info: Overriding config value frontend_port with env var FRONTEND_PORT=80
 Compiling: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 15/15 0:00:00
+hi
+Info: Overriding config value frontend_port with env var FRONTEND_PORT=80
+Compiling: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 15/15 0:00:00
+hi
+Info: Overriding config value frontend_port with env var FRONTEND_PORT=80
+Compiling: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 15/15 0:00:00
+Info: Overriding config value frontend_port with env var FRONTEND_PORT=80
+Info: Overriding config value frontend_port with env var FRONTEND_PORT=80
+Compiling: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 15/15 0:00:00
+hi
+hi
+Info: Overriding config value frontend_port with env var FRONTEND_PORT=80
+Compiling: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 15/15 0:00:00
+Info: Overriding config value frontend_port with env var FRONTEND_PORT=80
+Process SpawnProcess-19:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/usr/local/lib/python3.10/dist-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/usr/local/lib/python3.10/dist-packages/uvicorn/server.py", line 67, in serve
+    config.load()
+  File "/usr/local/lib/python3.10/dist-packages/uvicorn/config.py", line 477, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/usr/local/lib/python3.10/dist-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/usr/local/lib/python3.10/dist-packages/reflex/app_module_for_backend.py", line 9, in <module>
+    app = getattr(get_compiled_app(), constants.CompileVars.APP)
+  File "/usr/local/lib/python3.10/dist-packages/reflex/utils/prerequisites.py", line 184, in get_compiled_app
+    app_module = get_app(reload=reload)
+  File "/usr/local/lib/python3.10/dist-packages/reflex/utils/prerequisites.py", line 161, in get_app
+    app = __import__(module, fromlist=(constants.CompileVars.APP,))
+  File "/home/ubuntu/robot-animation-ai/webui/webui/webui.py", line 49, in <module>
+    app.add_page(index)
+  File "/usr/local/lib/python3.10/dist-packages/reflex/app.py", line 419, in add_page
+    component = self._generate_component(component)
+  File "/usr/local/lib/python3.10/dist-packages/reflex/app.py", line 359, in _generate_component
+    return component if isinstance(component, Component) else component()
+  File "/home/ubuntu/robot-animation-ai/webui/webui/webui.py", line 31, in index
+    clear_filepath()
+  File "/home/ubuntu/robot-animation-ai/webui/webui/webui.py", line 19, in clear_filepath
+    items_in_directory = os.listdir(destination_dir)
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin/assets/'
+Starting frontend failed with exit code -15
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+ ⨯ uncaughtException: RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+ ⨯ uncaughtException: RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+ ⨯ uncaughtException: RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+ ⨯ uncaughtException: RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+ ⨯ uncaughtException: RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+ ⨯ uncaughtException: RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+ ⨯ uncaughtException: RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+ ⨯ uncaughtException: RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+ ⨯ uncaughtException: RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+ ⨯ uncaughtException: RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+ ⨯ uncaughtException: RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+ ⨯ uncaughtException: RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+ ⨯ uncaughtException: RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+ ⨯ uncaughtException: RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+ ⨯ uncaughtException: RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+ ⨯ uncaughtException: RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+ ⨯ uncaughtException: RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+ ⨯ uncaughtException: RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+ ⨯ uncaughtException: RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+ ⨯ uncaughtException: RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+ ⨯ uncaughtException: RangeError: Invalid WebSocket frame: RSV1 must be clear
+    at Receiver.getInfo 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14708)
+    at Receiver.startLoop 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:14194)
+    at Receiver._write 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:13674)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.socketOnData 
+(/home/ubuntu/robot-animation-ai/webui/.web/node_modules/next/dist/compiled/ws/i
+ndex.js:1:44508)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  code: 'WS_ERR_UNEXPECTED_RSV_1',
+  [Symbol(status-code)]: 1002
+}
+[?25h
+Run with --loglevel debug  for the full log.
+[18:56:09] Reflex app stopped.                                     console.py:85

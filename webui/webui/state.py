@@ -417,36 +417,6 @@ class State(rx.State):
         print(f"Execution time: {execution_time} seconds")
 
         self.processing = False
-
-    # async def generate_video(self, exec_code):
-        
-    #     session = random.randint(1000000000, 9999999999)
-        
-    #     self.video_processing = True
-    #     loop = asyncio.get_running_loop()
-
-    #     # Define a synchronous wrapper function that will execute the code
-    #     def execute_code():
-    #         # This is where your synchronous code execution happens
-    #         exec(exec_code, globals())
-
-    #     # Run the synchronous function in a separate thread
-    #     await loop.run_in_executor(ThreadPoolExecutor(), execute_code)
-    #     await asyncio.sleep(0.1)  # 100ms delay after executing the code
-
-    #     # Proceed with moving the file
-    #     source_path = f"{path}/media/videos/480p15/AIScene.mp4"
-    #     destination_dir = f"{path}/assets/{session}"
-    #     destination_path = os.path.join(destination_dir, img.filename)
-    #     shutil.copy(source_path, destination_path)
-        
-    #     await asyncio.sleep(0.1)  # 100ms delay after copying the file
-
-    #     # Consider replacing time.sleep with asyncio.sleep for async sleep
-    #     await asyncio.sleep(1.5)  # Async sleep before updating the URL
-    #     self.update_url(img.fileaddr)
-    #     self.video_processing = False
-    
     
     def check_login(self):
         if self.auth_token:
@@ -454,23 +424,6 @@ class State(rx.State):
             pass
         else:
             print('hi')
-
-        
-        
-    # async def async_copy(self, source_path, destination_dir, img_filename):
-    #     # Ensure the destination directory exists
-    #     os.makedirs(destination_dir, exist_ok=True)
-        
-    #     destination_path = os.path.join(destination_dir, img_filename)
-        
-    #     # Open the source file and destination file asynchronously
-    #     async with aiofiles.open(source_path, 'rb') as src, aiofiles.open(destination_path, 'wb') as dst:
-    #         # Read and write in chunks to avoid loading the whole file into memory
-    #         while True:
-    #             data = await src.read(64 * 1024)  # Read in chunks of 64KB
-    #             if not data:
-    #                 break  # End of file reached
-    #             await dst.write(data)
                 
     async def generate_video(self, exec_code):
         
@@ -480,12 +433,12 @@ class State(rx.State):
         loop = asyncio.get_running_loop()
         config.output_file
         
-        if not os.path.exists(f'/home/ubuntu/robot-animation-ai/webui/temp/{self.session}'):
-            os.makedirs(f'/home/ubuntu/robot-animation-ai/webui/temp/{self.session}')
-        if not os.path.exists(f'/home/ubuntu/robot-animation-ai/webui/assets/{self.session}'):
-            os.makedirs(f'/home/ubuntu/robot-animation-ai/webui/assets/{self.session}')
+        if not os.path.exists(f'{path}/temp/{self.session}'):
+            os.makedirs(f'{path}/temp/{self.session}')
+        if not os.path.exists(f'{path}/assets/{self.session}'):
+            os.makedirs(f'{path}/assets/{self.session}')
         
-        save = f'config.media_dir = "/home/ubuntu/robot-animation-ai/webui/temp/{self.session}" \nconfig.output_file = "/home/ubuntu/robot-animation-ai/webui/assets/{self.session}/AIScene.mp4"\n'
+        save = f'config.media_dir = "{path}/temp/{self.session}" \nconfig.output_file = "{path}/assets/{self.session}/AIScene.mp4"\n'
 
         
         exec_code = save + exec_code
@@ -505,7 +458,7 @@ class State(rx.State):
         print(self.url)
         self.video_processing = False
         
-        directory_path = f"/home/ubuntu/robot-animation-ai/webui/temp/{self.session}"
+        directory_path = f"{path}/temp/{self.session}"
         
         if os.path.exists(directory_path):
             print('deleted folder')
