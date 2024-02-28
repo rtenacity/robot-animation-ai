@@ -1,0 +1,1555 @@
+Info: Overriding config value frontend_port with env var FRONTEND_PORT=80
+───────────────────────────── Starting Reflex App ──────────────────────────────
+Warning: Your version (0.3.10) of reflex is out of date. Upgrade to 0.4.2 with 
+'pip install reflex --upgrade'
+Compiling: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 15/15 0:00:00
+───────────────────────────────── App Running ──────────────────────────────────
+Info: Overriding config value frontend_port with env var FRONTEND_PORT=80
+App running at: http://localhost:80
+hi
+hi
+hi
+[02/28/24 15:05:25] INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: ApplyMethod(Square):  47%|████▋     | 7/15 [00:00<00:00, 69.22it/s]                                                                                [02/28/24 15:05:26] INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/683194430                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s][AAnimation 0: ApplyMethod(Square):  20%|██        | 3/15 [00:00<00:00, 28.47it/s]
+Animation 0: ApplyMethod(Square):  13%|█▎        | 2/15 [00:00<00:00, 17.21it/s][A                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/683194430                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+Animation 0: ApplyMethod(Square):  73%|███████▎  | 11/15 [00:00<00:00, 58.09it/s]
+Animation 0: ApplyMethod(Square):  73%|███████▎  | 11/15 [00:00<00:00, 56.70it/s][A                                                                                 
+                                                                                 [A                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/683194                         
+                             4303/AIScene_3.mp4'                                
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 2 animations                                
+                    INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/402622799                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/194741716                         
+                             4/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/402622799                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/194741716                         
+                             4/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/194741                         
+                             7164/AIScene_3.mp4'                                
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 2 animations                                
+[02/28/24 15:05:27] INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/402622                         
+                             7993/AIScene_3.mp4'                                
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 2 animations                                
+/6831944303/AIScene_3.mp4
+deleted folder
+Execution time: 4.7428038120269775 seconds
+/1947417164/AIScene_3.mp4
+deleted folder
+Execution time: 7.02412748336792 seconds
+/4026227993/AIScene_3.mp4
+deleted folder
+Execution time: 9.114416122436523 seconds
+[02/28/24 15:06:47] INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: ApplyMethod(Square):  73%|███████▎  | 11/15 [00:00<00:00, 106.89it/s]                                                                                                      INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/402622799                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+[02/28/24 15:06:48] INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/402622799                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+Animation 2: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 2: ApplyMethod(Square):  47%|████▋     | 7/15 [00:00<00:00, 68.88it/s]                                                                                                    INFO     Animation 2 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/402622799                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00002.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 3 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/402622799                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00003.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+Animation 4: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 4: ApplyMethod(Square):  40%|████      | 6/15 [00:00<00:00, 58.46it/s]                                                                                [02/28/24 15:06:49] INFO     Animation 4 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/402622799                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00004.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 5 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/402622799                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00005.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/402622                         
+                             7993/AIScene_4.mp4'                                
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 6 animations                                
+/4026227993/AIScene_5.mp4
+deleted folder
+Execution time: 7.326559782028198 seconds
+["I'm sorry, I can only provide assistance with programming-related prompts. If you have any coding-related questions or tasks, feel free to ask!"]
+Traceback (most recent call last):
+  File "/home/ubuntu/robot-animation-ai/webui/webui/state.py", line 380, in openai_process_question
+    code = parsed[1]
+IndexError: list index out of range
+
+Execution time: 2.6176764965057373 seconds
+[02/28/24 15:07:00] INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: ApplyMethod(Square):   7%|▋         | 1/15 [00:00<00:01,  9.41it/s]Animation 0: ApplyMethod(Square):  73%|███████▎  | 11/15 [00:00<00:00, 61.09it/s]                                                                                                     INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/683194430                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/683194430                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+Animation 2: ApplyMethod(Circle):   0%|          | 0/15 [00:00<?, ?it/s]Animation 2: ApplyMethod(Circle):  13%|█▎        | 2/15 [00:00<00:00, 17.24it/s]Animation 2: ApplyMethod(Circle):  87%|████████▋ | 13/15 [00:00<00:00, 67.43it/s]                                                                                 [02/28/24 15:07:01] INFO     Animation 2 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/683194430                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00002.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 3 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/683194430                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00003.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+Animation 4: AnimationGroup(Group):   0%|          | 0/15 [00:00<?, ?it/s]Animation 4: AnimationGroup(Group):   7%|▋         | 1/15 [00:00<00:02,  6.57it/s]Animation 4: AnimationGroup(Group):  60%|██████    | 9/15 [00:00<00:00, 41.81it/s]                                                                                                      INFO     Animation 4 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/683194430                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00004.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 5 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/683194430                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00005.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+Animation 6: ApplyMethod(Circle):   0%|          | 0/15 [00:00<?, ?it/s]Animation 6: ApplyMethod(Circle):  73%|███████▎  | 11/15 [00:00<00:00, 107.88it/s]                                                                                  [02/28/24 15:07:02] INFO     Animation 6 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/683194430                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00006.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 7 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/683194430                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00007.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/683194                         
+                             4303/AIScene_6.mp4'                                
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 8 animations                                
+/6831944303/AIScene_6.mp4
+deleted folder
+Execution time: 9.506364345550537 seconds
+hi
+[02/28/24 15:07:28] INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: ApplyMethod(Square):  60%|██████    | 9/15 [00:00<00:00, 88.69it/s]                                                                                [02/28/24 15:07:29] INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/747869706                         
+                             2/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/747869706                         
+                             2/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/747869                         
+                             7062/AIScene_7.mp4'                                
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 2 animations                                
+/7478697062/AIScene_7.mp4
+deleted folder
+Execution time: 4.750824689865112 seconds
+[02/28/24 15:07:46] INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: ApplyMethod(Square):  13%|█▎        | 2/15 [00:00<00:00, 17.07it/s]Animation 0: ApplyMethod(Square):  73%|███████▎  | 11/15 [00:00<00:00, 56.73it/s]                                                                                 [02/28/24 15:07:47] INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/747869706                         
+                             2/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/747869706                         
+                             2/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+Animation 2: ApplyMethod(Circle):   0%|          | 0/15 [00:00<?, ?it/s]Animation 2: ApplyMethod(Circle):  20%|██        | 3/15 [00:00<00:00, 28.72it/s]                                                                                [02/28/24 15:07:48] INFO     Animation 2 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/747869706                         
+                             2/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00002.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 3 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/747869706                         
+                             2/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00003.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+Animation 4: AnimationGroup(Group):   0%|          | 0/15 [00:00<?, ?it/s]Animation 4: AnimationGroup(Group):   7%|▋         | 1/15 [00:00<00:01,  8.13it/s]Animation 4: AnimationGroup(Group):  87%|████████▋ | 13/15 [00:00<00:00, 67.16it/s]                                                                                                       INFO     Animation 4 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/747869706                         
+                             2/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00004.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+[02/28/24 15:07:49] INFO     Animation 5 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/747869706                         
+                             2/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00005.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+Animation 6: ApplyMethod(Circle):   0%|          | 0/15 [00:00<?, ?it/s]Animation 6: ApplyMethod(Circle):  13%|█▎        | 2/15 [00:00<00:00, 17.90it/s]                                                                                                    INFO     Animation 6 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/747869706                         
+                             2/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00006.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 7 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/747869706                         
+                             2/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00007.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/747869                         
+                             7062/AIScene_8.mp4'                                
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 8 animations                                
+/7478697062/AIScene_9.mp4
+deleted folder
+Execution time: 9.296592473983765 seconds
+[02/28/24 15:07:52] INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/683194                         
+                             4303/AIScene_9.mp4.png'                            
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 0 animations                                
+/6831944303/AIScene_9.mp4
+deleted folder
+Execution time: 6.609070301055908 seconds
+[02/28/24 15:08:05] INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/683194                         
+                             4303/AIScene_10.mp4.png'                           
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 0 animations                                
+/6831944303/AIScene_10.mp4
+deleted folder
+Execution time: 4.6507134437561035 seconds
+Info: Overriding config value frontend_port with env var FRONTEND_PORT=80
+Process SpawnProcess-6:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/usr/local/lib/python3.10/dist-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/usr/local/lib/python3.10/dist-packages/uvicorn/server.py", line 67, in serve
+    config.load()
+  File "/usr/local/lib/python3.10/dist-packages/uvicorn/config.py", line 477, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/usr/local/lib/python3.10/dist-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/usr/local/lib/python3.10/dist-packages/reflex/app_module_for_backend.py", line 9, in <module>
+    app = getattr(get_compiled_app(), constants.CompileVars.APP)
+  File "/usr/local/lib/python3.10/dist-packages/reflex/utils/prerequisites.py", line 184, in get_compiled_app
+    app_module = get_app(reload=reload)
+  File "/usr/local/lib/python3.10/dist-packages/reflex/utils/prerequisites.py", line 161, in get_app
+    app = __import__(module, fromlist=(constants.CompileVars.APP,))
+  File "/home/ubuntu/robot-animation-ai/webui/webui/webui.py", line 7, in <module>
+    from webui.components import chat, modal, navbar, sidebar
+  File "/home/ubuntu/robot-animation-ai/webui/webui/components/__init__.py", line 2, in <module>
+    from .navbar import navbar
+  File "/home/ubuntu/robot-animation-ai/webui/webui/components/navbar.py", line 4, in <module>
+    from webui.state import State
+  File "/home/ubuntu/robot-animation-ai/webui/webui/state.py", line 477
+    session = 
+              ^
+SyntaxError: invalid syntax
+Info: Overriding config value frontend_port with env var FRONTEND_PORT=80
+Info: Overriding config value frontend_port with env var FRONTEND_PORT=80
+Compiling: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 15/15 0:00:00
+hi
+hi
+hi
+[02/28/24 15:11:00] INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: ApplyMethod(Square):  80%|████████  | 12/15 [00:00<00:00, 107.78it/s]                                                                                  [02/28/24 15:11:01] INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/292415245                         
+                             8/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]                    INFO     Caching disabled.              cairo_renderer.py:68
+
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s][AAnimation 0: ApplyMethod(Square):  20%|██        | 3/15 [00:00<00:00, 29.23it/s]
+Animation 0: ApplyMethod(Square):   7%|▋         | 1/15 [00:00<00:01,  9.91it/s][A                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/292415245                         
+                             8/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                                                                                
+Animation 0: ApplyMethod(Square):  93%|█████████▎| 14/15 [00:00<00:00, 78.00it/s][A
+                                                                                 [A                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/292415                         
+                             2458/AIScene_3.mp4'                                
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 2 animations                                
+                    INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/572249289                         
+                             4/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/150525122                         
+                             1/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/572249289                         
+                             4/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/150525122                         
+                             1/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+[02/28/24 15:11:02] INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/572249                         
+                             2894/AIScene_3.mp4'                                
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 2 animations                                
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/150525                         
+                             1221/AIScene_3.mp4'                                
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 2 animations                                
+/2924152458/AIScene_3.mp4
+deleted folder
+Execution time: 4.929466485977173 seconds
+/5722492894/AIScene_3.mp4
+deleted folder
+Execution time: 7.069943428039551 seconds
+/1505251221/AIScene_3.mp4
+deleted folder
+Execution time: 9.127699375152588 seconds
+[02/28/24 15:11:27] INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: ApplyMethod(Square):  33%|███▎      | 5/15 [00:00<00:00, 49.20it/s]                                                                                [02/28/24 15:11:28] INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/564605673                         
+                             7/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/564605673                         
+                             7/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+Animation 2: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 2: ApplyMethod(Square):  20%|██        | 3/15 [00:00<00:00, 28.46it/s]                                                                                                    INFO     Animation 2 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/564605673                         
+                             7/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00002.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 3 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/564605673                         
+                             7/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00003.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+Animation 4: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]                                                                        [02/28/24 15:11:29] INFO     Animation 4 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/564605673                         
+                             7/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00004.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 5 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/564605673                         
+                             7/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00005.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/564605                         
+                             6737/AIScene_4.mp4'                                
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 6 animations                                
+/5646056737/AIScene_4.mp4
+deleted folder
+Execution time: 7.229212522506714 seconds
+["I'm sorry, I can only provide assistance with relevant and appropriate requests. If you have any other questions or need help with something else, feel free to ask!"]
+Traceback (most recent call last):
+  File "/home/ubuntu/robot-animation-ai/webui/webui/state.py", line 380, in openai_process_question
+    code = parsed[1]
+IndexError: list index out of range
+
+Execution time: 1.0266995429992676 seconds
+[02/28/24 15:11:47] INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: ApplyMethod(Square): 100%|██████████| 15/15 [00:00<00:00, 145.75it/s]                                                                                                      INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/250008309                         
+                             5/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+[02/28/24 15:11:48] INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/250008309                         
+                             5/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+Animation 2: ApplyMethod(Circle):   0%|          | 0/15 [00:00<?, ?it/s]Animation 2: ApplyMethod(Circle):  53%|█████▎    | 8/15 [00:00<00:00, 78.90it/s]                                                                                                    INFO     Animation 2 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/250008309                         
+                             5/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00002.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 3 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/250008309                         
+                             5/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00003.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/250008                         
+                             3095/AIScene_6.mp4'                                
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 4 animations                                
+/2500083095/AIScene_6.mp4
+deleted folder
+Execution time: 6.160569429397583 seconds
+[02/28/24 15:12:09] INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: ApplyMethod(Square):  13%|█▎        | 2/15 [00:00<00:00, 19.89it/s]                                                                                                    INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/273373015                         
+                             8/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/273373015                         
+                             8/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+Animation 2: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 2: ApplyMethod(Square):  20%|██        | 3/15 [00:00<00:00, 29.41it/s]                                                                                [02/28/24 15:12:10] INFO     Animation 2 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/273373015                         
+                             8/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00002.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 3 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/273373015                         
+                             8/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00003.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+Animation 4: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 4: ApplyMethod(Square):  40%|████      | 6/15 [00:00<00:00, 58.39it/s]                                                                                                    INFO     Animation 4 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/273373015                         
+                             8/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00004.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 5 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/273373015                         
+                             8/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00005.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/273373                         
+                             0158/AIScene_7.mp4'                                
+                                                                                
+[02/28/24 15:12:11] INFO     Rendered AIScene                       scene.py:241
+                             Played 6 animations                                
+/2733730158/AIScene_7.mp4
+deleted folder
+Execution time: 7.272927522659302 seconds
+[02/28/24 15:12:18] INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: ApplyMethod(Square):  33%|███▎      | 5/15 [00:00<00:00, 48.27it/s]                                                                                [02/28/24 15:12:19] INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/393071763                         
+                             8/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/393071763                         
+                             8/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+Animation 2: ApplyMethod(Circle):   0%|          | 0/15 [00:00<?, ?it/s]Animation 2: ApplyMethod(Circle):  20%|██        | 3/15 [00:00<00:00, 28.55it/s]                                                                                                    INFO     Animation 2 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/393071763                         
+                             8/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00002.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 3 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/393071763                         
+                             8/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00003.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/393071                         
+                             7638/AIScene_8.mp4'                                
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 4 animations                                
+/3930717638/AIScene_8.mp4
+deleted folder
+Execution time: 6.678025245666504 seconds
+[02/28/24 15:12:34] INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: ApplyMethod(Square):  27%|██▋       | 4/15 [00:00<00:00, 35.48it/s]                                                                                                    INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/311596903                         
+                             9/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/311596903                         
+                             9/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+Animation 2: ApplyMethod(Circle):   0%|          | 0/15 [00:00<?, ?it/s]                                                                                            INFO     Animation 2 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/311596903                         
+                             9/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00002.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+[02/28/24 15:12:35] INFO     Animation 3 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/311596903                         
+                             9/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00003.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/311596                         
+                             9039/AIScene_9.mp4'                                
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 4 animations                                
+/3115969039/AIScene_9.mp4
+deleted folder
+Execution time: 6.035912990570068 seconds
+[02/28/24 15:13:28] INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: ApplyMethod(Square):   7%|▋         | 1/15 [00:00<00:01,  8.98it/s]Animation 0: ApplyMethod(Square):  80%|████████  | 12/15 [00:00<00:00, 63.89it/s]                                                                                 [02/28/24 15:13:29] INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/872780115                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/872780115                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/872780                         
+                             1153/AIScene_12.mp4'                               
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 2 animations                                
+/8727801153/AIScene_12.mp4
+deleted folder
+Execution time: 4.896558046340942 seconds
+[02/28/24 15:13:31] INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s][AAnimation 0: ApplyMethod(Square):  80%|████████  | 12/15 [00:00<00:00, 117.69it/s]                                                                                  
+Animation 0: ApplyMethod(Square):  53%|█████▎    | 8/15 [00:00<00:00, 66.45it/s][A
+                                                                                [A                    INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/562918612                         
+                             6/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/562918612                         
+                             6/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+[02/28/24 15:13:32] INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/562918612                         
+                             6/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+Animation 2: ApplyMethod(Circle):   0%|          | 0/15 [00:00<?, ?it/s]                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/562918612                         
+                             6/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+
+Animation 2: ApplyMethod(Circle):   0%|          | 0/15 [00:00<?, ?it/s][AAnimation 2: ApplyMethod(Circle):  47%|████▋     | 7/15 [00:00<00:00, 67.41it/s]                                                                                
+Animation 2: ApplyMethod(Circle):  47%|████▋     | 7/15 [00:00<00:00, 66.57it/s][A                    INFO     Animation 2 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/562918612                         
+                             6/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00002.mp4'                                        
+
+                                                                                [A                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 2 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/562918612                         
+                             6/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00002.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 3 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/562918612                         
+                             6/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00003.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+Animation 4: AnimationGroup(Group):   0%|          | 0/15 [00:00<?, ?it/s]                    INFO     Animation 3 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/562918612                         
+                             6/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00003.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+Animation 4: AnimationGroup(Group):  87%|████████▋ | 13/15 [00:00<00:00, 128.82it/s]                                                                                                        INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/562918                         
+                             6126/AIScene_12.mp4'                               
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 4 animations                                
+                    INFO     Animation 4 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/562918612                         
+                             6/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00004.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+[02/28/24 15:13:33] INFO     Animation 5 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/562918612                         
+                             6/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00005.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+Animation 6: ApplyMethod(Circle):   0%|          | 0/15 [00:00<?, ?it/s]Animation 6: ApplyMethod(Circle):  27%|██▋       | 4/15 [00:00<00:00, 38.71it/s]                                                                                                    INFO     Animation 6 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/562918612                         
+                             6/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00006.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 7 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/562918612                         
+                             6/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00007.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/562918                         
+                             6126/AIScene_12.mp4'                               
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 8 animations                                
+/5629186126/AIScene_12.mp4
+deleted folder
+Execution time: 8.371061325073242 seconds
+/9334536014/AIScene_12.mp4
+deleted folder
+Execution time: 10.609387636184692 seconds
+hi
+Info: Overriding config value frontend_port with env var FRONTEND_PORT=80
+Compiling: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 15/15 0:00:00
+hi
+hi
+hi
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/reflex/state.py", line 1103, in _process_event
+    async for event in events:
+  File "/home/ubuntu/robot-animation-ai/webui/webui/state.py", line 343, in process_question
+    async for value in model(question):
+  File "/home/ubuntu/robot-animation-ai/webui/webui/state.py", line 356, in openai_process_question
+    qa = QA(question=question, answer="")
+  File "pydantic/main.py", line 341, in pydantic.main.BaseModel.__init__
+pydantic.error_wrappers.ValidationError: 1 validation error for QA
+question
+  none is not an allowed value (type=type_error.none.not_allowed)
+
+[02/28/24 15:15:36] INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: ApplyMethod(Square):  40%|████      | 6/15 [00:00<00:00, 58.09it/s]                                                                                                    INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]                    INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/309286960                         
+                             8/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):  13%|█▎        | 2/15 [00:00<00:00, 19.94it/s][02/28/24 15:15:37] INFO     Caching disabled.              cairo_renderer.py:68
+                                                                                Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: ApplyMethod(Square):   7%|▋         | 1/15 [00:00<00:01,  8.42it/s]                    INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/485050012                         
+                             1/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/309286960                         
+                             8/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                                                                                                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/309286                         
+                             9608/AIScene.mp4'                                  
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 2 animations                                
+                    INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/561483213                         
+                             2/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/485050012                         
+                             1/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/485050                         
+                             0121/AIScene.mp4'                                  
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 2 animations                                
+                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/561483213                         
+                             2/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/561483                         
+                             2132/AIScene.mp4'                                  
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 2 animations                                
+/3092869608/AIScene.mp4
+deleted folder
+Execution time: 4.907410144805908 seconds
+/4850500121/AIScene.mp4
+deleted folder
+Execution time: 7.027571678161621 seconds
+/5614832132/AIScene.mp4
+deleted folder
+Execution time: 8.925727367401123 seconds
+[02/28/24 15:18:04] INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: ApplyMethod(Square):  20%|██        | 3/15 [00:00<00:00, 29.86it/s]                                                                                                    INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/553559481                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/553559481                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+Animation 2: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 2: ApplyMethod(Square):  13%|█▎        | 2/15 [00:00<00:00, 18.41it/s]                                                                                [02/28/24 15:18:05] INFO     Animation 2 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/553559481                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00002.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 3 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/553559481                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00003.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+Animation 4: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 4: ApplyMethod(Square):  73%|███████▎  | 11/15 [00:00<00:00, 106.52it/s]                                                                                                      INFO     Animation 4 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/553559481                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00004.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 5 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/553559481                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00005.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/553559                         
+                             4813/AIScene.mp4'                                  
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 6 animations                                
+/5535594813/AIScene.mp4
+deleted folder
+Execution time: 6.865679979324341 seconds
+hi
+[02/28/24 15:18:29] INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: ApplyMethod(Square):  67%|██████▋   | 10/15 [00:00<00:00, 97.81it/s]                                                                                 [02/28/24 15:18:30] INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/583264114                         
+                             1/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/583264114                         
+                             1/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/583264                         
+                             1141/AIScene.mp4'                                  
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 2 animations                                
+/5832641141/AIScene.mp4
+deleted folder
+Execution time: 4.993937253952026 seconds
+[02/28/24 15:18:49] INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: ApplyMethod(Square):  13%|█▎        | 2/15 [00:00<00:00, 16.00it/s]                                                                                [02/28/24 15:18:50] INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/810400128                         
+                             2/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/810400128                         
+                             2/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/810400                         
+                             1282/AIScene.mp4'                                  
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 2 animations                                
+/8104001282/AIScene.mp4
+deleted folder
+Execution time: 4.591375112533569 seconds
+[02/28/24 15:18:59] INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: ApplyMethod(Square):  13%|█▎        | 2/15 [00:00<00:00, 19.19it/s]                                                                                                    INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/625604166                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+[02/28/24 15:19:00] INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/625604166                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+Animation 2: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 2: ApplyMethod(Square):  73%|███████▎  | 11/15 [00:00<00:00, 104.45it/s]                                                                                                      INFO     Animation 2 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/625604166                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00002.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 3 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/625604166                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00003.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+Animation 4: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 4: ApplyMethod(Square):  80%|████████  | 12/15 [00:00<00:00, 117.80it/s]                                                                                                      INFO     Animation 4 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/625604166                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00004.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 5 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/625604166                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00005.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+Animation 6: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 6: ApplyMethod(Square):  80%|████████  | 12/15 [00:00<00:00, 117.35it/s]                                                                                  [02/28/24 15:19:01] INFO     Animation 6 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/625604166                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00006.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 7 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/625604166                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00007.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/625604                         
+                             1663/AIScene.mp4'                                  
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 8 animations                                
+/6256041663/AIScene.mp4
+deleted folder
+Execution time: 13.380862712860107 seconds
+Info: Overriding config value frontend_port with env var FRONTEND_PORT=80
+Compiling: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 15/15 0:00:00
+hi
+hi
+hi
+[02/28/24 15:20:17] INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: ApplyMethod(Square):  80%|████████  | 12/15 [00:00<00:00, 116.23it/s]                                                                                                      INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/248212557                         
+                             6/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/248212557                         
+                             6/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/248212                         
+                             5576/AIScene.mp4'                                  
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 2 animations                                
+[02/28/24 15:20:19] INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: ApplyMethod(Square):  27%|██▋       | 4/15 [00:00<00:00, 39.50it/s]                                                                                                    INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/706452600                         
+                             7/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/706452600                         
+                             7/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/706452                         
+                             6007/AIScene.mp4'                                  
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 2 animations                                
+/2482125576/AIScene.mp4
+deleted folder
+Execution time: 4.286253929138184 seconds
+/7064526007/AIScene.mp4
+deleted folder
+Execution time: 4.479640245437622 seconds
+Info: Overriding config value frontend_port with env var FRONTEND_PORT=80
+Compiling: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 15/15 0:00:00
+hi
+hi
+[02/28/24 15:21:24] INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: ApplyMethod(Square): 100%|██████████| 15/15 [00:00<00:00, 146.00it/s]                                                                                                      INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/514981214                         
+                             0/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/514981214                         
+                             0/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/514981                         
+                             2140/AIScene.mp4'                                  
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 2 animations                                
+/5149812140/AIScene.mp4
+deleted folder
+Execution time: 5.14261794090271 seconds
+[02/28/24 15:21:26] INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: ApplyMethod(Square):  13%|█▎        | 2/15 [00:00<00:00, 19.20it/s]                                                                                [02/28/24 15:21:27] INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/164553829                         
+                             5/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/164553829                         
+                             5/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/164553                         
+                             8295/AIScene.mp4'                                  
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 2 animations                                
+/1645538295/AIScene.mp4
+deleted folder
+Execution time: 6.072218179702759 seconds
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/reflex/state.py", line 1103, in _process_event
+    async for event in events:
+  File "/home/ubuntu/robot-animation-ai/webui/webui/state.py", line 343, in process_question
+    async for value in model(question):
+  File "/home/ubuntu/robot-animation-ai/webui/webui/state.py", line 356, in openai_process_question
+    qa = QA(question=question, answer="")
+  File "pydantic/main.py", line 341, in pydantic.main.BaseModel.__init__
+pydantic.error_wrappers.ValidationError: 1 validation error for QA
+question
+  none is not an allowed value (type=type_error.none.not_allowed)
+
+What the hell
+[02/28/24 15:27:02] INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: ApplyMethod(Square):  40%|████      | 6/15 [00:00<00:00, 57.72it/s]                                                                                                    INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/654940404                         
+                             2/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/654940404                         
+                             2/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/654940                         
+                             4042/AIScene.mp4'                                  
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 2 animations                                
+/6549404042/AIScene.mp4
+deleted folder
+Execution time: 6.316202640533447 seconds
+I am not the GLIZZY GOAT.
+[02/28/24 15:27:25] INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: ApplyMethod(Square):  40%|████      | 6/15 [00:00<00:00, 58.29it/s]                                                                                                    INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/221633226                         
+                             6/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/221633226                         
+                             6/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/221633                         
+                             2266/AIScene.mp4'                                  
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 2 animations                                
+/2216332266/AIScene.mp4
+deleted folder
+Execution time: 4.528967618942261 seconds
+I'm here to assist with programming-related questions and tasks. Let's focus on that.
+[02/28/24 15:27:47] INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: ApplyMethod(Square):   7%|▋         | 1/15 [00:00<00:01,  8.55it/s]                                                                                                    INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/981077895                         
+                             2/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/981077895                         
+                             2/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/981077                         
+                             8952/AIScene.mp4'                                  
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 2 animations                                
+/9810778952/AIScene.mp4
+deleted folder
+Execution time: 5.107122182846069 seconds
+hi
+This question is not relevant to the programming context.
+[02/28/24 15:28:13] INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: ApplyMethod(Square):  60%|██████    | 9/15 [00:00<00:00, 78.91it/s]                                                                                                    INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/347496836                         
+                             6/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/347496836                         
+                             6/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/347496                         
+                             8366/AIScene.mp4'                                  
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 2 animations                                
+/3474968366/AIScene.mp4
+deleted folder
+Execution time: 4.572396278381348 seconds
+hi
+[02/28/24 17:52:52] INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: ApplyMethod(Square):  27%|██▋       | 4/15 [00:00<00:00, 39.91it/s]                                                                                [02/28/24 17:52:53] INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/654758132                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/654758132                         
+                             3/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/654758                         
+                             1323/AIScene.mp4'                                  
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 2 animations                                
+/6547581323/AIScene.mp4
+deleted folder
+Execution time: 4.896602392196655 seconds
+hi
+[02/28/24 18:41:20] INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: ApplyMethod(Square):  40%|████      | 6/15 [00:00<00:00, 55.35it/s]                                                                                                    INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/368295843                         
+                             2/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00000.mp4'                                        
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/idk/368295843                         
+                             2/videos/480p15/partial_mo                         
+                             vie_files/AIScene/uncached                         
+                             _00001.mp4'                                        
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/368295                         
+                             8432/AIScene.mp4'                                  
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 2 animations                                
+/3682958432/AIScene.mp4
+deleted folder
+Execution time: 4.65528416633606 seconds
+Info: Overriding config value frontend_port with env var FRONTEND_PORT=80
+Compiling: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 15/15 0:00:00
+hi
+[02/28/24 18:43:20] INFO     Caching disabled.              cairo_renderer.py:68
+Animation 0: ApplyMethod(Square):   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: ApplyMethod(Square):  80%|████████  | 12/15 [00:00<00:00, 119.03it/s]                                                                                                      INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/temp/40457791                         
+                             35/videos/480p15/partial_m                         
+                             ovie_files/AIScene/uncache                         
+                             d_00000.mp4'                                       
+                    INFO     Caching disabled.              cairo_renderer.py:68
+                    INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/temp/40457791                         
+                             35/videos/480p15/partial_m                         
+                             ovie_files/AIScene/uncache                         
+                             d_00001.mp4'                                       
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:735
+                             File ready at                                      
+                             '/home/ubuntu/robot-animat                         
+                             ion-ai/webui/assets/404577                         
+                             9135/AIScene.mp4'                                  
+                                                                                
+                    INFO     Rendered AIScene                       scene.py:241
+                             Played 2 animations                                
+/4045779135/AIScene.mp4
+deleted folder
+Execution time: 4.426091909408569 seconds

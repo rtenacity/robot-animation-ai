@@ -7,20 +7,22 @@ from webui import styles
 from webui.components import chat, modal, navbar, sidebar
 from webui.state import State
 from webui.template import path
+import shutil
+
 def clear_filepath():
     destination_dir = f"{path}/assets/"
 
-    files_in_directory = os.listdir(destination_dir)
-    
-    mp4_files = [file for file in files_in_directory if file.endswith(".mp4")]
+    items_in_directory = os.listdir(destination_dir)
 
-    for mp4_file in mp4_files:
-        file_path = os.path.join(destination_dir, mp4_file)
-        os.remove(file_path)
+    directories = [item for item in items_in_directory if os.path.isdir(os.path.join(destination_dir, item))]
+
+    for directory in directories:
+        dir_path = os.path.join(destination_dir, directory)
+        shutil.rmtree(dir_path)
 
 
 
-@rx.page(title="RobotAI")
+@rx.page(title="RobotAI", on_load=State.check_login)
 def index() -> rx.Component:
     clear_filepath()
     """The main app."""

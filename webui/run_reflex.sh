@@ -1,3 +1,4 @@
 #!/bin/bash
 
-nohup sudo reflex run --frontend-port 80 >/dev/null 2>&1 &
+nohup sudo reflex run --frontend-port 80 > /home/ubuntu/robot-animation-ai/output.txt 2>&1 &
+

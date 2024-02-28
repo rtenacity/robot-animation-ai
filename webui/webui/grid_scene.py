@@ -153,5 +153,5 @@ class AIScene(RobotScene):
         self.bot.place_item((80, 50))
 
 
-AIScene2 = AIScene()
-AIScene2.render()
+# AIScene2 = AIScene()
+# AIScene2.render()
