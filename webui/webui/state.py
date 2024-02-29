@@ -279,6 +279,8 @@ class State(rx.State):
     
     session: int = None
     
+    user: int = None
+    
     auth_token: str = rx.Cookie()
 
     def create_chat(self):
@@ -423,6 +425,7 @@ class State(rx.State):
             # User is logged in
             pass
         else:
+            self.user = random.randint(1000000000, 9999999999)
             print('hi')
                 
     async def generate_video(self, exec_code):
@@ -433,12 +436,12 @@ class State(rx.State):
         loop = asyncio.get_running_loop()
         config.output_file
         
-        if not os.path.exists(f'{path}/temp/{self.session}'):
-            os.makedirs(f'{path}/temp/{self.session}')
-        if not os.path.exists(f'{path}/assets/{self.session}'):
-            os.makedirs(f'{path}/assets/{self.session}')
+        if not os.path.exists(f'{path}/temp/{self.user}/{self.session}'):
+            os.makedirs(f'{path}/temp/{self.user}/{self.session}')
+        if not os.path.exists(f'{path}/assets/{self.user}/{self.session}'):
+            os.makedirs(f'{path}/assets/{self.user}/{self.session}')
         
-        save = f'config.media_dir = "{path}/temp/{self.session}" \nconfig.output_file = "{path}/assets/{self.session}/AIScene.mp4"\n'
+        save = f'config.media_dir = "{path}/temp/{self.user}/{self.session}" \nconfig.output_file = "{path}/assets/{self.user}/{self.session}/AIScene.mp4"\n'
 
         
         exec_code = save + exec_code
@@ -453,12 +456,12 @@ class State(rx.State):
         await asyncio.sleep(0.1)  # 100ms delay after executing the code
 
         # Async sleep before updating the URL
-        time.sleep(2)
-        self.update_url(f'/{self.session}/AIScene.mp4') 
+        time.sleep(3)
+        self.update_url(f'/{self.user}/{self.session}/AIScene.mp4') 
         print(self.url)
         self.video_processing = False
         
-        directory_path = f"{path}/temp/{self.session}"
+        directory_path = f"{path}/temp/{self.user}/{self.session}"
         
         if os.path.exists(directory_path):
             print('deleted folder')
