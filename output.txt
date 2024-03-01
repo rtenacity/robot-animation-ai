@@ -1772,3 +1772,13 @@ Execution time: 9.418623924255371 seconds
                                                                                 
                     INFO     Rendered AIScene                       scene.py:241
                              Played 2 animations                                
+/5180668148/8256259181/AIScene.mp4
+deleted folder
+Execution time: 4.505052089691162 seconds
+Info: Overriding config value frontend_port with env var FRONTEND_PORT=80
+Compiling: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 15/15 0:00:00
+Info: Overriding config value frontend_port with env var FRONTEND_PORT=80
+Compiling: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 15/15 0:00:00
+Info: Overriding config value frontend_port with env var FRONTEND_PORT=80
+Info: Overriding config value frontend_port with env var FRONTEND_PORT=80
+Info: Overriding config value frontend_port with env var FRONTEND_PORT=80
