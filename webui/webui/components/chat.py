@@ -116,3 +116,21 @@ def action_bar() -> rx.Component:
         align_items="stretch",
         width="100%",
     )
+    
+    
+def floating_button():
+    return rx.button(
+        "Scroll to Bottom",
+        on_click=State.scroll_down,
+        style={
+            "position": "fixed",
+            "bottom": "20px",
+            "right": "20px"
+            
+            
+        },
+        
+        bg=styles.accent_color,
+        shadow=styles.shadow_light,
+
+    )

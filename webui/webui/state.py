@@ -330,6 +330,12 @@ class State(rx.State):
             The list of chat names.
         """
         return list(self.chats.keys())
+    
+    def scroll_down(self):
+        # Custom JavaScript to scroll down
+        js_code = "window.scrollTo(0, document.body.scrollHeight);"
+        return rx.call_script(js_code)
+
 
     async def process_question(self, form_data: dict[str, str]):
         img.update_file()
@@ -417,8 +423,9 @@ class State(rx.State):
         end_time = time.time()  # Capture end time after processing is complete
         execution_time = end_time - start_time
         print(f"Execution time: {execution_time} seconds")
-
+        time.sleep(2)
         self.processing = False
+        self.scroll_down()
     
     def check_login(self):
         if self.auth_token:
@@ -456,7 +463,7 @@ class State(rx.State):
         await asyncio.sleep(0.1)  # 100ms delay after executing the code
 
         # Async sleep before updating the URL
-        time.sleep(3)
+        time.sleep(2)
         self.update_url(f'/{self.user}/{self.session}/AIScene.mp4') 
         print(self.url)
         self.video_processing = False

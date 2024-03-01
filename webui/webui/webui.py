@@ -31,6 +31,7 @@ def index() -> rx.Component:
         chat.chat(),
         chat.action_bar(),
         sidebar(),
+        chat.floating_button(),
         modal(),
         bg=styles.bg_medium_color,
         color=styles.text_light_color,
